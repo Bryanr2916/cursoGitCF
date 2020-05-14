@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estadística y Probabilidad</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+</head>
+<body>
+
+  <div class="content">
+
+    <section id="cuantiles">
+      <h2>Cuantiles</h2>
+      <h4>Posiciones</h4>
+
+      <form action="#" class="basic-margin">
+
+        <label for="K">K </label>
+        <input id="cuan_k" class="form-margin" type="number" name="" id=""><br>
+
+        <label for="n">n </label>
+        <input id="cuan_n" class="form-margin" type="number" name="" id=""><br>
+
+        <label for="C">C: </label>
+        <input id="cuan_c" class="form-margin" type="number" name="" id=""><br>
+
+        <input id="btn_cuan" class="form-margin" type="button" style="border-radius: 6%;" value="Calcular">
+        
+        <br>
+
+        <label id="cuan_result" for="result">Resultado:</label>
+
+      </form>
+
+      <table>
+        <tr>
+          <th><p>Posición: </p></th>
+          <td class="numerador"><strong >Kn</strong></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><strong>C</strong></td>
+        </tr>
+      </table>
+
+    </section>
+
+    <section id="desviacion-estandar">
+      <h2>Varianza y Desviación Estandar</h2>
+
+      <table>
+        <tr>
+          <th><p>S <sup>2</sup> = </p></th>
+          <td class="numerador"><strong >{(xi - <span class="overline">X</span> ) <sup>2</sup> * fi</strong></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><strong>n-1</strong></td>
+        </tr>
+      </table>
+
+    </section>
+
+    <section id="datos-no-agrupados">
+      <h2>Datos No Agrupados</h2>
+
+      <h3>Moda</h3>
+
+      <p>Dato o datos que más se repite(n)</p>
+
+      <h3>Mediana</h3>
+
+      <h4>Número de datos par: </h4>
+      <ol>
+        <li>Ordenar</li>
+        <li>Seleccionar el del centro</li>
+      </ol>
+
+      <h4>Número de datos impar: </h4>
+      <ol>
+        <li>Ordenar</li>
+        <li>Sacar la media de los dos datos centrales</li>
+      </ol>
+
+      <h3>Media</h3>
+      <table>
+        <tr>
+          <th><p ><strong class="overline">X</strong> :</p></th>
+          <td class="numerador"><strong >{ xi</strong></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><strong>n</strong></td>
+        </tr>
+      </table> 
+
+    </section>
+
+    <section id="datos-agrupados">
+      <h2>Datos Agrupados</h2>
+
+      <h3>Moda</h3>
+      <table>
+        <tr>
+          <th><p ><strong>Mo</strong> :</p></th>
+          <td>Li+</td>
+          <td class="numerador"><strong >[fi] - [fi-1]</strong></td>
+          <td>* A</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td><strong>( fi - [fi-1] )+( fi - [fi+1] )</strong></td>
+        </tr>
+      </table>  
+
+      <h3>Mediana</h3>
+      <table>
+        <tr>
+          <th><p ><strong class="overline">X</strong> :</p></th>
+          <td>Li+</td>
+          <td class="numerador"><strong >n/2 - [fi-1]</strong></td>
+          <td>* A</td>
+        </tr>
+        <tr>
+          <th></th>
+          <td></td>
+          <td><strong>fi</strong></td>
+        </tr>
+      </table> 
+
+      <h3>Media</h3>
+      <table>
+        <tr>
+          <th><p ><strong class="overline">X</strong> :</p></th>
+          <td class="numerador"><strong >{ xi fi</strong></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><strong>n</strong></td>
+        </tr>
+      </table> 
+
+    </section>
+
+    <section id="permutaciones">
+      <h3>Permutaciones</h3>
+      <table>
+        <tr>
+          <th><p>n<b>P</b>r: </p></th>
+          <td class="numerador"><strong >n!</strong></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><strong>(n-r)!</strong></td>
+        </tr>
+      </table> 
+
+      <form action="#" class="basic-margin">
+
+        <label for="n">n: </label>
+        <input id="per_n" class="form-margin" type="number" name="" id=""><br>
+
+        <label for="n">r: </label>
+        <input id="per_r" class="form-margin" type="number" name="" id=""><br>
+
+        <input id="btn_per" class="form-margin" type="button" style="border-radius: 6%;" value="Calcular">
+        
+        <br>
+
+        <label id="per_result" for="result">Resultado:</label>
+
+      </form>
+
+    </section>
+
+    <section id="combinaciones">
+      <h3>Combinaciones</h3>
+
+      <table>
+        <tr>
+          <th><p>n<b>C</b>r: </p></th>
+          <td class="numerador"><strong >n!</strong></td>
+        </tr>
+        <tr>
+          <th></th>
+          <td><strong>(n-r)! r!</strong></td>
+        </tr>
+      </table>
+
+      <form action="#" class="basic-margin">
+
+        <label for="n">n: </label>
+        <input id="con_n" class="form-margin" type="number" name="" id=""><br>
+
+        <label for="n">r: </label>
+        <input id="con_r" class="form-margin" type="number" name="" id=""><br>
+
+        <input id="btn_con" class="form-margin" type="button" style="border-radius: 6%;" value="Calcular">
+        
+        <br>
+
+        <label id="con_result" for="result">Resultado: </label>
+
+      </form>
+
+    </section>
+
+  </div>
+
+  <footer>
+
+    <h2>Estadística y Probabilidad</h2>
+
+    <nav>
+      <ol>
+        <li><a href="#cuantiles">Cuantiles</a></li>
+        <li><a href="#desviacion-estandar">Desviación Estandar</a></li>
+        <li><a href="#datos-no-agrupados">Datos No Agrupados</a></li>
+        <li><a href="#datos-agrupados">Datos Agrupados</a></li>
+        <li> <a href="#permutaciones">Permutaciones</a> </li>
+        <li> <a href="#combinaciones">Combinaciones</a> </li>
+      </ol>
+    </nav>
+
+  </footer>
+
+  <script src="javascript/main.js"></script>
+</body>
+</html>

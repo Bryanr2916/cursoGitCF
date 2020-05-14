@@ -1,0 +1,95 @@
+
+html
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+  margin: 0;
+  background-color: #e5989b;
+}
+
+section
+{
+  width: 700px;
+  background-color: #ffcdb2;
+  border-radius: 6%;
+  padding:18px 12px;
+  margin: 20px 6px;
+}
+
+section dt, section dd
+{
+  margin-bottom: 12px;
+}
+
+footer
+{
+  padding: 10px 30px;
+  background-color: #6d6875;
+  box-sizing: border-box;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  color: white;
+}
+
+
+nav ol
+{
+  display: flex;
+  margin: 0;
+  padding: 0 60px;
+  justify-content: right;
+}
+
+nav ol li
+{
+  margin: 0 20px;
+}
+
+nav ol li a
+{
+  display: block;
+  color: white;
+  text-decoration-color: white;
+}
+
+.content
+{
+  width: 800px;
+  margin: auto;
+}
+
+table
+{
+  border: 1px solid black;
+  text-align: center;
+  table-layout: fixed;
+  padding:6px 0;
+}
+
+table p
+{
+  margin: 0;
+}
+.numerador
+{
+  border-bottom: 1px solid black;
+}
+
+.basic-margin
+{
+ margin:20px; 
+}
+
+.form-margin
+{
+  margin:6px;
+}
+
+.overline
+{
+  text-decoration: overline;
+}
